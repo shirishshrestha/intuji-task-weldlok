@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import OurSolutions from "./components/OurSolutions/OurSolutions";
 import Navigation from "./components/Navigation/Navigation";
+import OurCustomers from "./components/OurCustomers/OurCustomers";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <main>
         <About />
         <OurSolutions />
+        <OurCustomers />
       </main>
     </>
   );
