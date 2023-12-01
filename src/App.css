@@ -1,0 +1,44 @@
+:root {
+  --white: #ffffff;
+  --red: #f80102;
+  --button: #f80102;
+  --bg1: #171717;
+  --bg2: #232323;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: var(--white);
+  font-family: "Manrope", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.landing__page {
+  background-image: url("/images/hero-img.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+}
+
+.main__heading {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  padding-bottom: 0.75rem;
+}
+
+.subheading {
+  font-size: 2.75rem;
+  font-weight: 600;
+  line-height: 3.25rem;
+  text-transform: capitalize;
+}

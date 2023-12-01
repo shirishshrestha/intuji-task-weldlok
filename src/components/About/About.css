@@ -1,0 +1,67 @@
+.about {
+  width: 100%;
+  height: auto;
+  padding: 6rem 8.31rem;
+  background-color: var(--bg1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7.18rem;
+}
+
+.about__description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about__description--title {
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+}
+
+.about__description--para {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+.about_description--number {
+  display: flex;
+  gap: 1.62rem;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.number__digit {
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+}
+
+.number__text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+}
+
+.about__description--button {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--button);
+  width: fit-content;
+}

@@ -1,0 +1,76 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 2.5rem 8.625rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__menu--list {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar__menu--list:nth-child(n + 2):nth-child(-n + 5) {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.navbar__menu--list:first-child {
+  color: var(--red);
+}
+
+.navbar__menu--list::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  top: 2.19rem;
+  background-color: var(--red);
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar__menu--list:hover {
+  color: var(--red);
+}
+
+.navbar__menu--list:hover::after {
+  transform: scale(1);
+  transform-origin: bottom left;
+}
+
+.navbar__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 11.25rem;
+}
+
+.navbar__contact--icon {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3.125rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar__number {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
