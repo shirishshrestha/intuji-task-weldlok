@@ -1,5 +1,6 @@
 import "./Hero.css";
 import { MdArrowOutward } from "react-icons/md";
+import HeroCard from "./HeroCard";
 
 const Header = () => {
   return (
@@ -15,6 +16,24 @@ const Header = () => {
           <MdArrowOutward />
           Find Out More
         </button>
+        <div className="hero__animation">
+          <HeroCard
+            icon={"/images/industrial-icon.png"}
+            heading={"industrial"}
+            image={"/images/hero-industrial.png"}
+          />
+          <HeroCard
+            icon={"/images/civil-icon.png"}
+            heading={"civil"}
+            image={"/images/hero-civil.jpeg"}
+          />
+          <HeroCard
+            icon={"/images/architect.png"}
+            heading={"architectural"}
+            image={"/images/hero-architectural.jpeg"}
+            className="bg-top"
+          />
+        </div>
       </section>
     </>
   );

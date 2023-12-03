@@ -1,98 +1,67 @@
 import "./Brochures.css";
+import { Carousel } from "@material-tailwind/react";
 import { MdArrowOutward } from "react-icons/md";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/scrollbar";
-import { Keyboard, Scrollbar } from "swiper/modules";
 
 const Brochures = () => {
   return (
     <>
       <section className="brochures">
         <div className="brochures__content">
-          <div className="brochures__heading">
-            <h3 className="main__heading">our brochures</h3>
-            <h2 className="subheading">Explore and download our brochures</h2>
+          <div className="brochures__content--heading">
+            <h3 className="main__heading">Our brochures</h3>
+            <h2 className="subheading">explore and download our brochures</h2>
           </div>
           <div className="brochures__pdf">
             <div className="pdf__points">
-              <img src="/images/pdf.svg" alt="pdf icon" />
-              <span className="pdf__title">Mild Steel Diamond Grating</span>
+              <img src="/images/pdf.svg" alt="" />
+              <span>Mild Steel Diamond Grating</span>
             </div>
             <div className="pdf__points">
-              <img src="/images/pdf.svg" alt="pdf icon" />
-              <span className="pdf__title">Mild Steel Stair Treads</span>
+              <img src="/images/pdf.svg" alt="" />
+              <span>Mild Steel Stair Treads</span>
             </div>
             <div className="pdf__points">
-              <img src="/images/pdf.svg" alt="pdf icon" />
-              <span className="pdf__title">Aluminium Stair Treads</span>
+              <img src="/images/pdf.svg" alt="" />
+              <span>Aluminium Stair Treads</span>
             </div>
             <div className="pdf__points">
-              <img src="/images/pdf.svg" alt="pdf icon" />
-              <span className="pdf__title">Mastermesh Expanded Metal</span>
+              <img src="/images/pdf.svg" alt="" />
+              <span>Mastermesh Expanded Metal</span>
             </div>
           </div>
-          <button className="brochures__button">
-            <MdArrowOutward />
-            View All Brochures
-          </button>
         </div>
-        <Swiper
-          slidesPerView={1}
-          centeredSlides={false}
-          slidesPerGroupSkip={1}
-          grabCursor={true}
-          keyboard={{
-            enabled: true,
-          }}
-          scrollbar={true}
-          modules={[Keyboard, Scrollbar]}
-          breakpoints={{
-            769: {
-              slidesPerView: 2,
-              slidesPerGroup: 2,
-            },
-          }}
-          className="w-full"
+        <Carousel
+          className="rounded-xl"
+          navigation={({ setActiveIndex, activeIndex, length }) => (
+            <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+              {new Array(length).fill("").map((_, i) => (
+                <span
+                  key={i}
+                  className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
+                    activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                  }`}
+                  onClick={() => setActiveIndex(i)}
+                />
+              ))}
+            </div>
+          )}
         >
-          <SwiperSlide className="w-[270px]">
-            <div className="slider__content">
-              <img src="/images/brochures-diamond.png" alt="diamond" />
-              <span className="slider__content--heading">
-                Mild Steel Diamond Grating
-              </span>
-              <button className="slider__content--button ">
-                <MdArrowOutward />
-                Download Now
-              </button>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider__content">
-              <img src="/images/brochures-diamond.png" alt="diamond" />
-              <span className="slider__content--heading">
-                Mild Steel Diamond Grating
-              </span>
-              <button className="slider__content--button">
-                <MdArrowOutward />
-                Download Now
-              </button>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider__content">
-              <img src="/images/brochures-diamond.png" alt="diamond" />
-              <span className="slider__content--heading">
-                Mild Steel Diamond Grating
-              </span>
-              <button className="slider__content--button">
-                <MdArrowOutward />
-                Download Now
-              </button>
-            </div>
-          </SwiperSlide>
-          <div className="swiper-scrollbar mt-20"></div>
-        </Swiper>
+          <img
+            src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+            alt="image 1"
+            className="h-full w-full object-cover"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+            alt="image 2"
+            className="h-full w-full object-cover"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+            alt="image 3"
+            className="h-full w-full object-cover"
+          />
+        </Carousel>
       </section>
     </>
   );

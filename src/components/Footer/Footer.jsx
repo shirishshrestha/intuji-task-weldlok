@@ -1,6 +1,10 @@
 import "./Footer.css";
 import { MdArrowOutward } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -53,7 +57,7 @@ const Footer = () => {
             <h4 className="menu--links__heading w-[17.4375rem]">
               Subscribe To Our Newsletter
             </h4>
-            <div className="review--mail w-full">
+            <div className="review--mail ">
               <input
                 type="email"
                 className="review--input"
@@ -62,6 +66,12 @@ const Footer = () => {
               <button className="review--button p-[0.62rem] ">
                 <FaArrowRight />
               </button>
+            </div>
+            <div className="footer__icons">
+              <FaLinkedin className="w-[1.5rem] h-[1.5rem]" />
+              <FaYoutube className="w-[1.5rem] h-[1.5rem]" />
+              <FaFacebook className="w-[1.5rem] h-[1.5rem]" />
+              <FaTwitter className="w-[1.5rem] h-[1.5rem]" />
             </div>
           </div>
         </section>
