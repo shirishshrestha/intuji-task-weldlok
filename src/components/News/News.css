@@ -1,0 +1,26 @@
+.news {
+  padding: 6rem 8.62rem;
+  background-color: var(--bg1);
+}
+
+.news__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news__button {
+  display: flex;
+  gap: 0.75rem;
+  height: fit-content;
+  background-color: var(--button);
+  align-items: center;
+  padding: 1rem 1.875rem;
+}
+
+.news__button--btn {
+  text-align: justify;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}

@@ -1,0 +1,81 @@
+.casestudies {
+  background-color: var(--bg1);
+  padding: 6rem 8.62rem;
+  display: flex;
+  gap: 3.5rem;
+  flex-direction: column;
+}
+
+.casestudies__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.casestudies__button {
+  background-color: var(--button);
+  display: flex;
+  padding: 1rem 1.875rem;
+  align-items: center;
+  gap: 0.75rem;
+  height: fit-content;
+}
+
+.casestudies__slider {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 2fr 1fr;
+}
+
+.slider__description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.69rem;
+}
+
+.slider__heading {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.details__content {
+  display: flex;
+  padding: 0.5rem 0rem;
+  align-items: flex-start;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.details__content:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.option {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.option__details {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.slider__description--para {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.slider__description--btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: justify;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}

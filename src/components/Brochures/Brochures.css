@@ -1,0 +1,69 @@
+.brochures {
+  padding: 6rem 0 6rem 8.62rem;
+  background-color: var(--bg2);
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 8rem;
+}
+
+.brochures__heading {
+  padding-bottom: 2rem;
+}
+
+.brochures__pdf {
+  padding-bottom: 2.5rem;
+}
+
+.pdf__points {
+  display: flex;
+  padding: 1rem 0rem;
+  align-items: flex-start;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pdf__points:last-child {
+  border: none;
+}
+
+.pdf__title {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.brochures__button {
+  display: flex;
+  padding: 1rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--button);
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+}
+
+.slider__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.slider__content--heading {
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.slider__content--button {
+  width: fit-content;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  text-align: justify;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}

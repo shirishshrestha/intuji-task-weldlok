@@ -5,18 +5,26 @@ import About from "./components/About/About";
 import OurSolutions from "./components/OurSolutions/OurSolutions";
 import Navigation from "./components/Navigation/Navigation";
 import OurCustomers from "./components/OurCustomers/OurCustomers";
+import Testimonials from "./components/Testimonials/Testimonials";
+import CaseStudies from "./components/CaseStudies/CaseStudies";
+import Brochures from "./components/Brochures/Brochures";
+import News from "./components/News/News";
 
 const App = () => {
   return (
     <>
-      <section className="landing__page">
+      <header className="landing__page">
         <Navigation />
         <Hero />
-      </section>
+      </header>
       <main>
         <About />
         <OurSolutions />
         <OurCustomers />
+        <Testimonials />
+        <CaseStudies />
+        <Brochures />
+        <News />
       </main>
     </>
   );
