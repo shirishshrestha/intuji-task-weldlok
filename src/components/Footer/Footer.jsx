@@ -1,9 +1,86 @@
 import "./Footer.css";
+import { MdArrowOutward } from "react-icons/md";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <>
-      <div>Footer</div>
+      <footer className="footer">
+        <section className="footer__top">
+          <div className="footer__top--title">
+            <h3 className="main__heading">Enquire now</h3>
+            <h2 className="subheading">
+              For more information{" "}
+              <span className="text-[#F80102]">on products and services</span>
+            </h2>
+          </div>
+          <button className="footer__top--button">
+            <MdArrowOutward />
+            request a quote
+          </button>
+        </section>
+        <section className="footer__menu">
+          <div className="footer__menu--desc">
+            <img src="images/icon.png" alt="" className="w-[12.5rem] " />
+            <div className="footer__menu--para">
+              <p>
+                We are on a mission to invest in new products and systems which
+                will provide the Australian market with innovative solutions.
+              </p>
+            </div>
+          </div>
+          <div className="footer__menu--links">
+            <span className="menu--links__heading">quick links</span>
+            <ul className="menu--links__list">
+              <li>Home</li>
+              <li>Our Customers </li>
+              <li>News </li>
+              <li>About Us </li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div className="footer__menu--links">
+            <span className="menu--links__heading">products range</span>
+            <ul className="menu--links__list">
+              <li>Civil Drainage Products</li>
+              <li>Flooring & Grating Solutions </li>
+              <li>Handrail Systems </li>
+              <li>Mastermesh Expanded Perforated </li>
+            </ul>
+          </div>
+          <div className="footer__menu--review ">
+            <h4 className="menu--links__heading w-[17.4375rem]">
+              Subscribe To Our Newsletter
+            </h4>
+            <div className="review--mail w-full">
+              <input
+                type="email"
+                className="review--input"
+                placeholder="Email address"
+              />
+              <button className="review--button p-[0.62rem] ">
+                <FaArrowRight />
+              </button>
+            </div>
+          </div>
+        </section>
+        <section className="footer__bottom">
+          <div className="footer__bottom--text">
+            <span>&copy; {year} by NEPEAN Building and Infrastructure.</span>
+            <div>
+              <p>
+                Weldlok® is a registered trademark of NEPEAN Building &
+                Infrastructure.
+              </p>
+            </div>
+          </div>
+          <div className="footer__bottom--text">
+            Privacy Policy | Internet Policy | Terms & Conditions of Sale |
+            Conditions of Purchase
+          </div>
+        </section>
+      </footer>
     </>
   );
 };

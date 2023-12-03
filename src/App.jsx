@@ -9,6 +9,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import CaseStudies from "./components/CaseStudies/CaseStudies";
 import Brochures from "./components/Brochures/Brochures";
 import News from "./components/News/News";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <CaseStudies />
         <Brochures />
         <News />
+        <Footer />
       </main>
     </>
   );
