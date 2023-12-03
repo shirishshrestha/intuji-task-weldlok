@@ -1,1 +1,1 @@
-The first task given by intuji during the frontend internship program
+The first task given by Intuji Pvt. Ltd. during the frontend internship program.
