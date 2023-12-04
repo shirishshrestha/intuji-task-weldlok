@@ -1,11 +1,15 @@
 import "./Brochures.css";
-import { Carousel } from "@material-tailwind/react";
 import { MdArrowOutward } from "react-icons/md";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination } from "swiper/modules";
 
 const Brochures = () => {
   return (
     <>
-      <section className="brochures">
+      <section className="brochures relative">
         <div className="brochures__content">
           <div className="brochures__content--heading">
             <h3 className="main__heading">Our brochures</h3>
@@ -30,38 +34,77 @@ const Brochures = () => {
             </div>
           </div>
         </div>
-        <Carousel
-          className="rounded-xl"
-          navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-              {new Array(length).fill("").map((_, i) => (
-                <span
-                  key={i}
-                  className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                    activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                  }`}
-                  onClick={() => setActiveIndex(i)}
-                />
-              ))}
-            </div>
-          )}
+        <Swiper
+          slidesPerView={2.5}
+          spaceBetween={30}
+          pagination={{
+            type: "progressbar",
+          }}
+          modules={[Pagination]}
+          className="brochures__swiper mySwiper w-full"
         >
-          <img
-            src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-            alt="image 1"
-            className="h-full w-full object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-            alt="image 2"
-            className="h-full w-full object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-            alt="image 3"
-            className="h-full w-full object-cover"
-          />
-        </Carousel>
+          <SwiperSlide>
+            <div className="brochures__swiper--container">
+              <img src="/images/brochures-diamond.png" alt="swiper image" />
+              <span className="swiper--container__title">
+                Mild Steel Diamond Grating
+              </span>
+              <button className="swiper--container__button">
+                <MdArrowOutward className="text-[1.5rem]" />
+                Download Now
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brochures__swiper--container">
+              <img src="/images/brochures-diamond.png" alt="swiper image" />
+              <span className="swiper--container__title">
+                Mild Steel Stairs Treads
+              </span>
+              <button className="swiper--container__button">
+                <MdArrowOutward className="text-[1.5rem]" />
+                Download Now
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brochures__swiper--container">
+              <img src="/images/brochures-diamond.png" alt="swiper image" />
+              <span className="swiper--container__title">
+                Aluminium Stair Treads
+              </span>
+
+              <button className="swiper--container__button">
+                <MdArrowOutward className="text-[1.5rem]" />
+                Download Now
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brochures__swiper--container">
+              <img src="/images/brochures-diamond.png" alt="swiper image" />
+              <span className="swiper--container__title">
+                Aluminium Stair Treads
+              </span>
+              <button className="swiper--container__button">
+                <MdArrowOutward className="text-[1.5rem]" />
+                Download Now
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brochures__swiper--container">
+              <img src="/images/brochures-diamond.png" alt="swiper image" />
+              <span className="swiper--container__title">
+                Aluminium Stair Treads
+              </span>
+              <button className="swiper--container__button">
+                <MdArrowOutward className="text-[1.5rem]" />
+                Download Now
+              </button>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </section>
     </>
   );

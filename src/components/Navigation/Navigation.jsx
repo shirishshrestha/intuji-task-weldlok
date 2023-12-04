@@ -26,10 +26,14 @@ const Navigation = () => {
           <li className="navbar__menu--list">Contact Us</li>
         </ul>
         <div className="navbar__contact">
-          <div className="navbar__contact--icon">
-            <MdPhone />
-          </div>
-          <span className="navbar__number">1800 935 356</span>
+          <a href="tel:1800 935 356">
+            <div className="navbar__contact--icon">
+              <MdPhone />
+            </div>
+          </a>
+          <a href="tel:1800 935 356">
+            <span className="navbar__number">1800 935 356</span>
+          </a>
         </div>
       </nav>
     </>

@@ -3,12 +3,63 @@
   padding: 6rem 8.62rem 0;
 }
 
+.testimonials__description {
+  padding-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 7.94rem;
+}
+
 .testimonials__para {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.75rem;
   padding-top: 0.75rem;
-  padding-bottom: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.testimonials__description--right {
+  background-color: var(--white);
+  display: flex;
+  width: 35.9375rem;
+  padding: 2.5rem 3.42rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.testimonials--right__para p {
+  color: #232323;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.testimonials--right__person {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.person__name {
+  display: flex;
+  flex-direction: column;
+}
+
+.person__name span:first-child {
+  color: var(--button);
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}
+
+.person__name span:last-child {
+  color: #687076;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 .testimonials__request {
