@@ -26,8 +26,8 @@ const App = () => {
         <CaseStudies />
         <Brochures />
         <News />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 };

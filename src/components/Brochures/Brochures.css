@@ -1,13 +1,16 @@
 .brochures {
-  padding: 6rem 0rem 10rem 8.625rem;
-  display: grid;
-  /* align-items: flex-start.; */
-  grid-template-columns: 1fr 1.5fr;
-  gap: 8rem;
+  padding: 6rem 0rem 10rem;
   background-color: var(--bg2);
   width: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.brochures__container {
+  display: grid;
+  /* align-items: flex-start.; */
+  grid-template-columns: 1fr 1.5fr;
+  gap: 8rem;
 }
 
 .brochures__content {

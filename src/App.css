@@ -14,6 +14,7 @@
   background-color: transparent;
   color: var(--white);
   font-family: "Manrope", sans-serif;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -27,6 +28,12 @@ body {
   width: 100%;
   background-size: cover;
   background-position: top;
+}
+
+.main__container {
+  max-width: calc(1440px + 266px);
+  padding: 0 133px;
+  margin: 0 auto;
 }
 
 .main__heading {

@@ -2,7 +2,10 @@
   background-image: url("/images/footer-image.png");
   background-position: top;
   background-size: cover;
-  padding: 6rem 8.62rem;
+  padding: 6rem 0;
+}
+
+.footer__container {
   display: flex;
   flex-direction: column;
   gap: 4rem;

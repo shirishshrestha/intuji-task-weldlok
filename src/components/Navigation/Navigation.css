@@ -1,10 +1,12 @@
 .navbar {
-  display: flex;
-  width: 100%;
-  padding: 2.5rem 8.625rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar__container {
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
 }
 
 .navbar__menu {
@@ -68,4 +70,23 @@
 .navbar__number {
   font-size: 1.25rem;
   font-weight: 800;
+}
+
+@media (width <= 1024px) {
+  .navbar__container {
+    padding: 2rem 0;
+  }
+
+  .navbar img {
+    height: 1.4rem;
+  }
+
+  .navbar__menu--list {
+    font-size: 0.7rem;
+  }
+
+  .navbar__contact {
+    width: auto;
+    gap: 0.5rem;
+  }
 }

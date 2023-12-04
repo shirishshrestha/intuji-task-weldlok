@@ -1,6 +1,9 @@
 .casestudies {
   background-color: var(--bg1);
-  padding: 6rem 8.62rem;
+  padding: 6rem 0;
+}
+
+.casestudies__container {
   display: flex;
   gap: 3.5rem;
   flex-direction: column;

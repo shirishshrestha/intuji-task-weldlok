@@ -1,12 +1,13 @@
 .about {
-  width: 100%;
-  height: auto;
-  padding: 6rem 8.31rem;
+  padding: 6rem 0;
   background-color: var(--bg1);
+}
+
+.about__container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 7.18rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about__description {
