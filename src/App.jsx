@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
     <>
-      <header className="landing__page">
+      <header>
         <Navigation />
       </header>
       <main>

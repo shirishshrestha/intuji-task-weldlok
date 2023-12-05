@@ -1,6 +1,9 @@
 .navbar {
   padding: 2.5rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 9;
+  position: absolute;
+  width: 100%;
 }
 
 .navbar__container {
@@ -83,6 +86,10 @@
 
   .navbar__menu--list {
     font-size: 0.7rem;
+  }
+
+  .navbar__menu--list::after {
+    bottom: -1.67rem;
   }
 
   .navbar__contact {

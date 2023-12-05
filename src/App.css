@@ -23,14 +23,6 @@ body {
   background-color: var(--bg2);
 }
 
-.landing__page {
-  background-image: url("/images/hero-img.png");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: top;
-}
-
 .main__container {
   max-width: calc(1174px + 30px);
   padding: 0 15px;
@@ -50,11 +42,4 @@ body {
   font-weight: 600;
   line-height: 3.25rem;
   text-transform: capitalize;
-}
-
-@media (width<=1024px) {
-  .main__container {
-    max-width: 100%;
-    padding: 0;
-  }
 }
