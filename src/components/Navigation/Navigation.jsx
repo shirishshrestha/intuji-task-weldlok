@@ -5,43 +5,55 @@ import { MdPhone } from "react-icons/md";
 const Navigation = () => {
   return (
     <>
-      <nav className="navbar">
-        <div className="main__container">
-          <div className="navbar__container">
+      <section className="navbar">
+        <div className="main__container navbar__container">
+          <figure>
             <a href="/">
-              <img src="/images/icon.png" alt="logo" />
+              <img src="/images/icon.png" alt="logo" className="navbar__logo" />
             </a>
+          </figure>
+          <nav>
             <ul className="navbar__menu">
               <li className="navbar__menu--list">
                 <a href="#">Home</a>
               </li>
               <li className="navbar__menu--list">
-                Our Products <FaCaretDown />
+                <a href="#" className="navbar__menu--anchor">
+                  Our Products <FaCaretDown />
+                </a>
               </li>
               <li className="navbar__menu--list">
-                Customers <FaCaretDown />
+                <a href="#customers" className="navbar__menu--anchor">
+                  Customers <FaCaretDown />
+                </a>
               </li>
               <li className="navbar__menu--list">
-                About Us <FaCaretDown />
+                <a href="#about" className="navbar__menu--anchor">
+                  About Us <FaCaretDown />
+                </a>
               </li>
               <li className="navbar__menu--list">
-                News <FaCaretDown />
+                <a href="#news" className="navbar__menu--anchor">
+                  News <FaCaretDown />
+                </a>
               </li>
-              <li className="navbar__menu--list">Contact Us</li>
+              <li className="navbar__menu--list">
+                <a href="#footer">Contact Us</a>
+              </li>
             </ul>
-            <div className="navbar__contact">
-              <a href="tel:1800 935 356">
-                <div className="navbar__contact--icon">
-                  <MdPhone />
-                </div>
-              </a>
-              <a href="tel:1800 935 356">
-                <span className="navbar__number">1800 935 356</span>
-              </a>
-            </div>
+          </nav>
+          <div className="navbar__contact">
+            <a href="tel:1800 935 356">
+              <div className="navbar__contact--icon">
+                <MdPhone />
+              </div>
+            </a>
+            <a href="tel:1800 935 356">
+              <span className="navbar__number">1800 935 356</span>
+            </a>
           </div>
         </div>
-      </nav>
+      </section>
     </>
   );
 };

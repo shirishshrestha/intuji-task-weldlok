@@ -16,9 +16,9 @@ const App = () => {
     <>
       <header className="landing__page">
         <Navigation />
-        <Hero />
       </header>
       <main>
+        <Hero />
         <About />
         <OurSolutions />
         <OurCustomers />

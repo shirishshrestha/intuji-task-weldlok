@@ -27,7 +27,7 @@
 .casestudies__slider {
   display: grid;
   /* justify-content: space-between; */
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1.2fr;
 }
 
 .slider__description {

@@ -5,8 +5,8 @@ const About = () => {
   return (
     <>
       <section className="about">
-        <div className="main__container">
-          <div className="about__container">
+        <div className="main__container ">
+          <figure className="about__container">
             <img src="/images/about-image.png" alt="about-image" />
             <div className="about__description">
               <div className="about__description--heading">
@@ -43,7 +43,7 @@ const About = () => {
                 Learn More About Us
               </button>
             </div>
-          </div>
+          </figure>
         </div>
       </section>
     </>

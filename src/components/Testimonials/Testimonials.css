@@ -77,11 +77,10 @@
   font-weight: 600;
   line-height: 3.25rem;
   text-transform: capitalize;
-  width: 41.68rem;
 }
 
-.testimonials__request--heading span {
-  color: var(--button);
+.testimonials__request--heading p {
+  color: var(--red);
   font-size: 2.75rem;
   font-weight: 600;
   line-height: 3.25rem;

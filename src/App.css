@@ -20,6 +20,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: var(--bg2);
 }
 
 .landing__page {
@@ -31,8 +32,8 @@ body {
 }
 
 .main__container {
-  max-width: calc(1440px + 266px);
-  padding: 0 133px;
+  max-width: calc(1174px + 30px);
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -49,4 +50,11 @@ body {
   font-weight: 600;
   line-height: 3.25rem;
   text-transform: capitalize;
+}
+
+@media (width<=1024px) {
+  .main__container {
+    max-width: 100%;
+    padding: 0;
+  }
 }

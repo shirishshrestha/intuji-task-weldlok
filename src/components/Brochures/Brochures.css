@@ -9,7 +9,7 @@
 .brochures__container {
   display: grid;
   /* align-items: flex-start.; */
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1.12fr 1.4fr;
   gap: 8rem;
 }
 
@@ -26,6 +26,20 @@
   align-items: center;
   gap: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brochures__swiper {
+  padding: 1.76rem 0;
+}
+
+.brochures__button {
+  display: flex;
+  padding: 1rem 1.875rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+  width: fit-content;
+  background-color: var(--button);
 }
 
 .brochures__swiper--container {
@@ -61,8 +75,9 @@
 .swiper-vertical
   > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
 .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
-  top: 90%;
-  width: 81.5%;
+  top: 110%;
+  width: 100%;
+  left: -9.5%;
   transform: translate(11%, -50%);
 }
 
