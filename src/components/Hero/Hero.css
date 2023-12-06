@@ -131,10 +131,6 @@
 }
 
 @media (width<=1024px) {
-  .hero {
-    padding: 13.38rem 2rem 0;
-  }
-
   .hero__container {
     gap: 2rem;
   }
@@ -149,5 +145,16 @@
 
   .hero__card:hover .hero__btn {
     top: 7.8rem;
+  }
+}
+
+@media (width<=850px) {
+  .hero {
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+  }
+
+  .hero__animation {
+    display: none;
   }
 }

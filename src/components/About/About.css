@@ -66,3 +66,27 @@
   background-color: var(--button);
   width: fit-content;
 }
+
+@media (width<=1024px) {
+  .about__container {
+    gap: 4rem;
+  }
+}
+
+@media (width<=850px) {
+  .about__container {
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  .about__description--title {
+    width: 57%;
+  }
+
+  .about__image {
+    height: 17rem;
+    width: 17rem;
+    position: absolute;
+    top: 1rem;
+  }
+}

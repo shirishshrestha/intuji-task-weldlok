@@ -88,3 +88,43 @@
 .mySwiper .swiper-pagination-progressbar-fill {
   background-color: var(--red);
 }
+
+@media (width<=1024px) {
+  .brochures__container {
+    grid-template-columns: 1fr 1.4fr;
+    gap: 2rem;
+  }
+
+  .brochures__content {
+    gap: 1rem;
+  }
+
+  .swiper-horizontal > .swiper-pagination-progressbar,
+  .swiper-pagination-progressbar.swiper-pagination-horizontal,
+  .swiper-vertical
+    > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+  .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+    width: 96.5%;
+    left: -8.8%;
+  }
+}
+
+@media (width<850px) {
+  .brochures {
+    padding: 4rem 0 8rem;
+  }
+
+  .brochures__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .swiper-horizontal > .swiper-pagination-progressbar,
+  .swiper-pagination-progressbar.swiper-pagination-horizontal,
+  .swiper-vertical
+    > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+  .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+    top: 105%;
+    left: -8%;
+  }
+}

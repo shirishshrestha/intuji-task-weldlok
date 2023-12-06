@@ -18,7 +18,11 @@ const News = () => {
           </div>
           <div className="news__content">
             <div className="news__content--left">
-              <img src="/images/news-role.png" alt="" />
+              <img
+                src="/images/news-role.png"
+                alt=""
+                className="news__content--left__image"
+              />
               <div className="news__main">
                 <div className="news__field">
                   <span className="news__field--title">Industrial</span>
@@ -43,13 +47,13 @@ const News = () => {
             </div>
             <div className="news__content--right">
               <div className="news--right__comp">
-                <img src="/images/news-ductile.png" alt="" />
+                <img src="/images/news-ductile.png" alt="" className="news--right__comp--image"/>
                 <div className="comp__content">
                   <div className="news__field">
                     <span className="news__field--title">civil</span>
                     <span className="news__field--date">july 19, 2023</span>
                   </div>
-                  <h4 className="comp__content--heaidng h-[63px]">
+                  <h4 className="comp__content--heading h-[63px] max-[850px]:h-auto">
                     Ductile Solutions For Civil Drainage
                   </h4>
                   <button className="comp__content--button">
@@ -59,13 +63,13 @@ const News = () => {
                 </div>
               </div>
               <div className="news--right__comp">
-                <img src="/images/news-benefits.png" alt="" />
+                <img src="/images/news-benefits.png" alt="" className="news--right__comp--image"/>
                 <div className="comp__content">
                   <div className="news__field">
                     <span className="news__field--title">architectural</span>
                     <span className="news__field--date">july 19, 2023</span>
                   </div>
-                  <h4 className="comp__content--heaidng h-[63px]">
+                  <h4 className="comp__content--heading h-[63px] max-[850px]:h-auto">
                     The Benefits Of Aluminium Stair Treads
                   </h4>
                   <button className="comp__content--button">
@@ -75,13 +79,13 @@ const News = () => {
                 </div>
               </div>
               <div className="news--right__comp">
-                <img src="/images/news-stair.png" alt="" />
+                <img src="/images/news-stair.png" alt="" className="news--right__comp--image"/>
                 <div className="comp__content">
                   <div className="news__field">
                     <span className="news__field--title">Industrial</span>
                     <span className="news__field--date">july 19, 2023</span>
                   </div>
-                  <h4 className="comp__content--heaidng h-[63px]">
+                  <h4 className="comp__content--heading h-[63px] max-[850px]:h-auto">
                     Understanding Stair Treads
                   </h4>
                   <button className="comp__content--button">

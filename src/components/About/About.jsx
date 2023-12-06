@@ -7,14 +7,23 @@ const About = () => {
       <section className="about">
         <div className="main__container ">
           <figure className="about__container">
-            <img src="/images/about-image.png" alt="about-image" />
+            <img
+              src="/images/about-image.png"
+              alt="about-image"
+              className="about__image"
+            />
             <div className="about__description">
               <div className="about__description--heading">
                 <h3 className="main__heading ">about weldlok</h3>
                 <h2 className="about__description--title">
-                  Weldlok and Balltube: <br />
-                  Trusted Australian brands for 60+ years, serving
-                  infrastructure, mining, industrial, civil, and fabrication.
+                  Weldlok and Balltube:
+                  <div>
+                    <span>
+                      Trusted Australian brands for 60+ years, serving
+                      infrastructure, mining, industrial, civil, and
+                      fabrication.
+                    </span>
+                  </div>
                 </h2>
               </div>
               <div className="about__description--para">

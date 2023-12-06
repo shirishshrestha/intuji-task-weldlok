@@ -4,7 +4,7 @@
   --black: #000;
   --button: #f80102;
   --bg1: #171717;
-  --bg2: #232323;
+  --bg2: rgb(36, 36, 36);
 }
 
 * {
@@ -42,4 +42,23 @@ body {
   font-weight: 600;
   line-height: 3.25rem;
   text-transform: capitalize;
+}
+
+@media (width<=1024px) {
+  .main__container {
+    max-width: calc(960px + 30px);
+  }
+}
+
+@media (width<=850px) {
+  .main__container {
+    max-width: calc(720px + 30px);
+  }
+}
+
+@media (width<=500px) {
+  .main__container {
+    max-width: calc(290px + 20px);
+    padding: 0 10px;
+  }
 }

@@ -5,7 +5,11 @@ const CaseStudiesCards = () => {
   return (
     <>
       <figure className="casestudies__slider">
-        <img src="/images/casestudies-image.png" alt="image" />
+        <img
+          src="/images/casestudies-image.png"
+          alt="image"
+          className="casestudies__image"
+        />
         <figcaption className="slider__description">
           <h3 className="slider__heading">
             Central Taiwan Innovation & Research Park
@@ -18,7 +22,9 @@ const CaseStudiesCards = () => {
               </div>
             </div>
             <div className="details__content">
-              <span className="option w-[108px]">Client:</span>
+              <span className="option w-[100px] max-[850px]:w-[135px]">
+                Client:
+              </span>
               <div className="option__details">
                 <p>Central Taiwan Innovation & Research Park</p>
               </div>

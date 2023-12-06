@@ -1,6 +1,7 @@
 .testimonials {
   background-color: var(--bg1);
   padding: 6rem 0 0;
+  position: relative;
 }
 
 .testimonials__description {
@@ -16,6 +17,41 @@
   line-height: 1.75rem;
   padding-top: 0.75rem;
   padding-bottom: 1.5rem;
+}
+
+.mySwiper {
+  position: static;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 49% !important;
+}
+
+.swiper-button-next {
+  right: 82.59% !important;
+  background-image: url("/images/arrow-right.svg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--button);
+  padding: 1rem 1.2rem;
+}
+
+.swiper-button-prev {
+  left: 11.4% !important;
+  background-image: url("/images/arrow-left.svg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--button);
+  padding: 0.8rem 1.2rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+  opacity: 0;
 }
 
 .testimonials__description--right {
@@ -95,4 +131,43 @@
   gap: 0.75rem;
   background-color: var(--button);
   height: fit-content;
+}
+
+@media (width<=1024px) {
+  .testimonials__description {
+    gap: 2.5rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 54% !important;
+  }
+
+  .swiper-button-next {
+    right: 88% !important;
+  }
+
+  .swiper-button-prev {
+    left: 3.5% !important;
+  }
+
+  .testimonials__description--right {
+    width: auto;
+    padding: 2rem 3rem;
+  }
+
+  .testimonials__request {
+    padding: 3rem;
+  }
+}
+
+@media (width<=850px) {
+  .swiper-button-next {
+    right: 85% !important;
+  }
+
+  .testimonials__description--right {
+    padding: 1.5rem 2rem;
+  }
+
 }

@@ -38,3 +38,15 @@
   line-height: 1.625rem;
   text-transform: uppercase;
 }
+
+@media (width<=1024px) {
+  .customers__points {
+    justify-content: center;
+  }
+}
+
+@media (width<=850px) {
+  .customers__points--list {
+    width: 20.3125rem;
+  }
+}

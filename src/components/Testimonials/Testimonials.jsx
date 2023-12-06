@@ -2,6 +2,11 @@ import "./Testimonials.css";
 import { MdArrowOutward } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import TestimonialsCard from "./TestimonialsCard";
 
 const Testimonials = () => {
   return (
@@ -18,29 +23,27 @@ const Testimonials = () => {
                   corporis suscipit laboriosam,
                 </p>
               </div>
-              <div className="testimonials__description--button flex gap-[1rem]">
-                <FaArrowLeft className="w-[2.375rem] h-[2.375rem] p-[0.44rem] bg-[#F80102] cursor-pointer" />
-                <FaArrowRight className="w-[2.375rem] h-[2.375rem] p-[0.44rem]  bg-[#F80102] cursor-pointer" />
-              </div>
             </div>
-            <div className="testimonials__description--right">
-              <div className="testimonials--right__para">
-                <p>
-                  "I have been a customer of Weldlok for over 5 years now, in
-                  this time I have been nothing but pleased with the service and
-                  quality. Weldlok always goes above and beyond my expectations.
-                </p>
-              </div>
-              <div className="testimonials--right__person">
-                <img src="/images/testimonials-image.png" alt="person" />
-                <div className="person__name">
-                  <span>PAUL MIRABITO</span>
-                  <span>Murray Engineering</span>
-                </div>
-              </div>
-            </div>
+            <Swiper
+              navigation={true}
+              modules={[Navigation]}
+              className="mySwiper w-full"
+              style={{
+                "--swiper-navigation-opacity": "0",
+              }}
+            >
+              <SwiperSlide className="text-black">
+                <TestimonialsCard />
+              </SwiperSlide>
+              <SwiperSlide className="text-black">
+                <TestimonialsCard />
+              </SwiperSlide>
+              <SwiperSlide className="text-black">
+                <TestimonialsCard />
+              </SwiperSlide>
+            </Swiper>
           </div>
-          <section className="testimonials__request">
+          <div className="testimonials__request">
             <h3 className="testimonials__request--heading">
               Elevate Your Infrastructure
               <p>with our Premium Solutions!</p>
@@ -49,7 +52,7 @@ const Testimonials = () => {
               <MdArrowOutward />
               Request A Quote
             </button>
-          </section>
+          </div>
         </div>
       </section>
     </>

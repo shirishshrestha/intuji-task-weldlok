@@ -82,3 +82,31 @@
   font-weight: 700;
   line-height: 1.75rem;
 }
+
+@media (width<=1024px) {
+  .casestudies__slider {
+    grid-template-columns: 1.5fr 1.2fr;
+    gap: 2rem;
+  }
+}
+
+@media (width<=850px) {
+  .casestudies__slider {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: row-reverse;
+  }
+
+  .slider__heading {
+    width: 50%;
+  }
+
+  .slider__description--details {
+    width: 50%;
+  }
+
+  .casestudies__image {
+    position: absolute;
+    height: 15rem;
+  }
+}
