@@ -143,15 +143,15 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    top: 54% !important;
+    top: 48% !important;
   }
 
   .swiper-button-next {
-    right: 88% !important;
+    right: 89.4% !important;
   }
 
   .swiper-button-prev {
-    left: 3.5% !important;
+    left: 1.7% !important;
   }
 
   .testimonials__description--right {
@@ -165,8 +165,13 @@
 }
 
 @media (width<=850px) {
+  .swiper-button-prev,
   .swiper-button-next {
-    right: 85% !important;
+    top: 45% !important;
+  }
+
+  .swiper-button-next {
+    right: 86% !important;
   }
 
   .testimonials__description--right {
@@ -197,11 +202,15 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    top: 33.5% !important;
+    top: 28.5% !important;
   }
 
   .swiper-button-next {
-    right: 68% !important;
+    right: 67% !important;
+  }
+
+  .swiper-button-prev {
+    left: 3.7% !important;
   }
 
   .testimonials__request {
