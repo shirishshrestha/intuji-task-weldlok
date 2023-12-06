@@ -169,5 +169,51 @@
   .testimonials__description--right {
     padding: 1.5rem 2rem;
   }
+}
 
+@media (width<=500px) {
+  .testimonials__description {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .testimonials__description--right {
+    padding: 1rem 2rem;
+  }
+
+  .testimonials--right__person {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .testimonials--right__para p {
+    font-size: 1.1rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 33.5% !important;
+  }
+
+  .swiper-button-next {
+    right: 68% !important;
+  }
+
+.testimonials__request {
+  padding: 1rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.testimonials__request--heading,.testimonials__request--heading p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.testimonials__request--button {
+  padding: 1rem 1.4rem;
+}
 }

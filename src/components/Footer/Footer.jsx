@@ -46,11 +46,21 @@ const Footer = () => {
               <span className="menu--links__heading">quick links</span>
               <div>
                 <ul className="menu--links__list">
-                  <li>Home</li>
-                  <li>Our Customers </li>
-                  <li>News </li>
-                  <li>About Us </li>
-                  <li>Contact Us</li>
+                  <li>
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#customers">Our Customers </a>
+                  </li>
+                  <li>
+                    <a href="#news">News</a>
+                  </li>
+                  <li>
+                    <a href="#about">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#footer">Contact Us</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -58,18 +68,26 @@ const Footer = () => {
               <span className="menu--links__heading">products range</span>
               <div>
                 <ul className="menu--links__list">
-                  <li>Civil Drainage Products</li>
-                  <li>Flooring & Grating Solutions </li>
-                  <li>Handrail Systems </li>
-                  <li>Mastermesh Expanded Perforated </li>
+                  <li>
+                    <a href="#civil">Civil Drainage Products</a>
+                  </li>
+                  <li>
+                    <a href="#flooring">Flooring & Grating Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#handrail">Handrail Systems </a>
+                  </li>
+                  <li>
+                    <a href="#mastermesh">Mastermesh Expanded Perforated</a>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div className="footer__menu--review ">
+            <div className="footer__menu--review " id="footer">
               <h4 className="menu--links__heading w-[17.4375rem]">
                 Subscribe To Our Newsletter
               </h4>
-              <div className="review--mail ">
+              <div className="review--mail text-black">
                 <input
                   type="email"
                   className="review--input"

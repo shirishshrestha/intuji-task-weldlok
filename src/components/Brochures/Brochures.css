@@ -128,3 +128,31 @@
     left: -8%;
   }
 }
+
+@media (width<500px) {
+  .brochures {
+    padding: 4rem 0 6rem;
+  }
+
+  .brochures__swiper--container {
+    gap: 1rem;
+  }
+
+  .swiper--container__title {
+    font-size: 1.4rem;
+  }
+
+.swiper--container__button {
+  font-size: 1.1rem;
+
+}
+
+  .swiper-horizontal > .swiper-pagination-progressbar,
+  .swiper-pagination-progressbar.swiper-pagination-horizontal,
+  .swiper-vertical
+    > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+  .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+    top: 102%;
+    left: -9%;
+  }
+}

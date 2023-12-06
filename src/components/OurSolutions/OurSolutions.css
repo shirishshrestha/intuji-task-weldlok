@@ -79,3 +79,17 @@
     height: 3.75rem;
   }
 }
+
+@media (width<=500px) {
+  .solutions__card {
+    grid-template-columns: 1fr;
+  }
+
+  .card__heading {
+    font-size: 1.4rem;
+  }
+
+  .card__para {
+    font-size: 1.1rem;
+  }
+}

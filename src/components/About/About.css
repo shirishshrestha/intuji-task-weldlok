@@ -65,6 +65,7 @@
   gap: 0.75rem;
   background-color: var(--button);
   width: fit-content;
+  font-weight: 700;
 }
 
 @media (width<=1024px) {
@@ -89,4 +90,34 @@
     position: absolute;
     top: 1rem;
   }
+}
+
+@media (width<=500px) {
+  .about__container {
+    display: block;
+  }
+
+  .about__description {
+    gap: 1.2rem;
+  }
+  .about__description--title {
+    font-size: 1.4rem;
+  }
+
+  .about__image {
+    display: none;
+  }
+
+  .about__description--title {
+    width: 100%;
+  }
+
+  .about__description--para {
+    font-size: 1rem;
+  }
+
+.about_description--number {
+  flex-direction: column;
+  gap: 1rem;
+}
 }

@@ -1,9 +1,9 @@
 import { MdArrowOutward } from "react-icons/md";
 
-const SolutionsCard = ({ image, heading, para }) => {
+const SolutionsCard = ({ image, heading, para, id }) => {
   return (
     <>
-      <figure className="card">
+      <figure className="card" id={id}>
         <img src={image} alt="civil drainage" className="card__image" />
         <figcaption className="card__description">
           <h3 className="card__heading">{heading}</h3>

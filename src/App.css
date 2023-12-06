@@ -61,4 +61,12 @@ body {
     max-width: calc(290px + 20px);
     padding: 0 10px;
   }
+
+  .main__heading {
+    font-size: 0.9rem;
+  }
+
+  .subheading {
+    font-size: 2.5rem;
+  }
 }

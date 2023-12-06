@@ -26,7 +26,6 @@
 
 .casestudies__slider {
   display: grid;
-  /* justify-content: space-between; */
   grid-template-columns: 2fr 1.2fr;
 }
 
@@ -108,5 +107,29 @@
   .casestudies__image {
     position: absolute;
     height: 15rem;
+  }
+}
+
+@media (width<=500px) {
+  .casestudies__top {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .casestudies__image {
+    display: none;
+  }
+
+  .slider__heading {
+    width: 100%;
+  }
+
+  .slider__description--details {
+    width: 100%;
+  }
+
+  .testimonials__request--button {
+    padding: 0.8rem 1.2rem;
   }
 }

@@ -16,7 +16,7 @@ const CaseStudiesCards = () => {
           </h3>
           <div className="slider__description--details">
             <div className="details__content">
-              <span className=" w-[92px]">Location:</span>
+              <span className=" w-[92px] max-[500px]:w-[75px]">Location:</span>
               <div className="option__details">
                 <p>Nantou, Taiwan</p>
               </div>

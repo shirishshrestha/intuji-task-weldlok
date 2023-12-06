@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./Navigation.css";
-import { FaCaretDown } from "react-icons/fa";
 import { MdPhone } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Dropdown } from "flowbite-react";
 
 const Navigation = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -28,23 +28,38 @@ const Navigation = () => {
                 <a href="#">Home</a>
               </li>
               <li className="navbar__menu--list">
-                <a href="#" className="navbar__menu--anchor">
-                  Our Products <FaCaretDown />
-                </a>
+                <Dropdown
+                  label={`OUR PRODUCTS  ▾ `}
+                  className="navbar__dropdown"
+                  inline
+                >
+                  <Dropdown.Item className="">
+                    <a href="#civil">Civil Drainage Products</a>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <a href="#flooring">Flooring & Grating Solutions</a>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <a href="#handrail">Handrail Systems</a>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <a href="#mastermesh">Mastermesh Expanded Perforated</a>
+                  </Dropdown.Item>
+                </Dropdown>
               </li>
               <li className="navbar__menu--list">
                 <a href="#customers" className="navbar__menu--anchor">
-                  Customers <FaCaretDown />
+                  Customers ▾
                 </a>
               </li>
               <li className="navbar__menu--list">
                 <a href="#about" className="navbar__menu--anchor">
-                  About Us <FaCaretDown />
+                  About Us ▾
                 </a>
               </li>
               <li className="navbar__menu--list">
                 <a href="#news" className="navbar__menu--anchor">
-                  News <FaCaretDown />
+                  News ▾
                 </a>
               </li>
               <li className="navbar__menu--list">
@@ -53,7 +68,7 @@ const Navigation = () => {
               <div className={`contact__hidden ${navOpen ? "open" : ""}`}>
                 <a href="tel:1800 935 356">
                   <div className="navbar__contact--icon">
-                    <MdPhone className="contact__hidden--icon"/>
+                    <MdPhone className="contact__hidden--icon" />
                   </div>
                 </a>
                 <a href="tel:1800 935 356">

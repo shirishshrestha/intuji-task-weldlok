@@ -26,7 +26,6 @@ const CaseStudies = () => {
               pagination={true}
               spaceBetween={30}
               modules={[Pagination]}
-              className=""
               style={{
                 "--swiper-pagination-color": "#F80102",
                 "--swiper-pagination-bullet-inactive-color":

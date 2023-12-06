@@ -5,7 +5,7 @@ const News = () => {
   return (
     <>
       <section className="news">
-        <div className="main__container news__container">
+        <div className="main__container news__container" id="news">
           <div className="news__top">
             <div className="news__top--heading">
               <h3 className="main__heading">News and events</h3>
@@ -17,13 +17,13 @@ const News = () => {
             </div>
           </div>
           <div className="news__content">
-            <div className="news__content--left">
+            <figure className="news__content--left">
               <img
                 src="/images/news-role.png"
                 alt=""
                 className="news__content--left__image"
               />
-              <div className="news__main">
+              <figcaption className="news__main">
                 <div className="news__field">
                   <span className="news__field--title">Industrial</span>
                   <span className="news__field--date">july 19, 2023</span>
@@ -43,12 +43,16 @@ const News = () => {
                   <MdArrowOutward />
                   Learn More
                 </button>
-              </div>
-            </div>
+              </figcaption>
+            </figure>
             <div className="news__content--right">
-              <div className="news--right__comp">
-                <img src="/images/news-ductile.png" alt="" className="news--right__comp--image"/>
-                <div className="comp__content">
+              <figure className="news--right__comp">
+                <img
+                  src="/images/news-ductile.png"
+                  alt=""
+                  className="news--right__comp--image"
+                />
+                <figcaption className="comp__content">
                   <div className="news__field">
                     <span className="news__field--title">civil</span>
                     <span className="news__field--date">july 19, 2023</span>
@@ -60,11 +64,15 @@ const News = () => {
                     <MdArrowOutward />
                     Learn More
                   </button>
-                </div>
-              </div>
-              <div className="news--right__comp">
-                <img src="/images/news-benefits.png" alt="" className="news--right__comp--image"/>
-                <div className="comp__content">
+                </figcaption>
+              </figure>
+              <figure className="news--right__comp">
+                <img
+                  src="/images/news-benefits.png"
+                  alt=""
+                  className="news--right__comp--image"
+                />
+                <figcaption className="comp__content">
                   <div className="news__field">
                     <span className="news__field--title">architectural</span>
                     <span className="news__field--date">july 19, 2023</span>
@@ -76,11 +84,15 @@ const News = () => {
                     <MdArrowOutward />
                     Learn More
                   </button>
-                </div>
-              </div>
-              <div className="news--right__comp">
-                <img src="/images/news-stair.png" alt="" className="news--right__comp--image"/>
-                <div className="comp__content">
+                </figcaption>
+              </figure>
+              <figure className="news--right__comp">
+                <img
+                  src="/images/news-stair.png"
+                  alt=""
+                  className="news--right__comp--image"
+                />
+                <figcaption className="comp__content">
                   <div className="news__field">
                     <span className="news__field--title">Industrial</span>
                     <span className="news__field--date">july 19, 2023</span>
@@ -92,8 +104,8 @@ const News = () => {
                     <MdArrowOutward />
                     Learn More
                   </button>
-                </div>
-              </div>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>

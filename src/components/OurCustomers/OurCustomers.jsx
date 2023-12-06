@@ -5,7 +5,7 @@ const OurCustomers = () => {
   return (
     <>
       <section className="customers">
-        <div className="main__container customers__container">
+        <div className="main__container customers__container" id="customers">
           <div className="customers__heading">
             <h3 className="main__heading">our customers</h3>
             <h2 className="subheading">Who We Work For</h2>

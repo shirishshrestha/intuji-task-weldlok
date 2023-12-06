@@ -50,3 +50,9 @@
     width: 20.3125rem;
   }
 }
+
+@media (width<=500px) {
+  .customers__points--list span {
+    font-size: 1.1rem;
+  }
+}

@@ -40,12 +40,17 @@ const Brochures = () => {
             </button>
           </div>
           <Swiper
-            slidesPerView={2.5}
+            slidesPerView={1}
             spaceBetween={30}
             pagination={{
               type: "progressbar",
             }}
             modules={[Pagination]}
+            breakpoints={{
+              640: {
+                slidesPerView: 2.5,
+              },
+            }}
             className="brochures__swiper mySwiper w-full"
           >
             <SwiperSlide>

@@ -4,8 +4,8 @@ import { MdArrowOutward } from "react-icons/md";
 const About = () => {
   return (
     <>
-      <section className="about">
-        <div className="main__container ">
+      <section className="about" >
+        <div className="main__container" id="about">
           <figure className="about__container">
             <img
               src="/images/about-image.png"

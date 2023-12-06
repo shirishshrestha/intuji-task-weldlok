@@ -17,6 +17,7 @@ const OurSolutions = () => {
               para={
                 "Innovative Civil Drainage Products Including Ductile, Mild Steel Grates, Orca Drain..."
               }
+              id={"civil"}
             />
             <SolutionsCard
               image={"/images/solution-flooring.png"}
@@ -24,6 +25,7 @@ const OurSolutions = () => {
               para={
                 "Weldlok Grating and Flooring Products Come In Stainless Steel, Steel, & Mild Steel..."
               }
+              id={"flooring"}
             />
             <SolutionsCard
               image={"/images/solution-handrail.png"}
@@ -31,6 +33,7 @@ const OurSolutions = () => {
               para={
                 "Innovative Civil Drainage Products Including Ductile, Mild Steel Grates, Orca Drain..."
               }
+              id={"handrail"}
             />
             <SolutionsCard
               image={"/images/solution-mastermesh.png"}
@@ -38,6 +41,7 @@ const OurSolutions = () => {
               para={
                 "Standard And Custom Designed Perforated Metal Products, Security Mesh, Decorative..."
               }
+              id={"mastermesh"}
             />
           </div>
         </div>
