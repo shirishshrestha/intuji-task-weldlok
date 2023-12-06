@@ -25,6 +25,7 @@ const Testimonials = () => {
               </div>
             </div>
             <Swiper
+              spaceBetween={40}
               navigation={true}
               modules={[Navigation]}
               className="mySwiper w-full"

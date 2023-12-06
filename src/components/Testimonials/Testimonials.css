@@ -1,6 +1,9 @@
 .testimonials {
   background-color: var(--bg1);
   padding: 6rem 0 0;
+}
+
+.testimonials_container {
   position: relative;
 }
 
@@ -20,16 +23,16 @@
 }
 
 .mySwiper {
-  position: static;
+  position: relative;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  top: 49% !important;
+  top: 42% !important;
 }
 
 .swiper-button-next {
-  right: 82.59% !important;
+  right: 91% !important;
   background-image: url("/images/arrow-right.svg") !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +42,7 @@
 }
 
 .swiper-button-prev {
-  left: 11.4% !important;
+  left: 1.4% !important;
   background-image: url("/images/arrow-left.svg") !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,19 +204,20 @@
     right: 68% !important;
   }
 
-.testimonials__request {
-  padding: 1rem;
-  flex-direction: column;
-  gap: 2rem;
-}
+  .testimonials__request {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-.testimonials__request--heading,.testimonials__request--heading p {
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  text-align: center;
-}
+  .testimonials__request--heading,
+  .testimonials__request--heading p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
 
-.testimonials__request--button {
-  padding: 1rem 1.4rem;
-}
+  .testimonials__request--button {
+    padding: 1rem 1.4rem;
+  }
 }
