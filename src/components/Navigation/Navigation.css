@@ -29,6 +29,8 @@
 .navbar__menu {
   display: flex;
   gap: 1.5rem;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
 }
 
 .navbar__menu--list {
@@ -109,6 +111,15 @@
   display: none;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 @media (width <= 1024px) {
   .navbar {
     padding: 1rem 0;
@@ -176,6 +187,7 @@
     background-color: rgba(36, 36, 36);
     width: 17rem;
     border-radius: 1rem;
+    animation-name: slideIn;
   }
 
   .navbar__menu--list::after {
