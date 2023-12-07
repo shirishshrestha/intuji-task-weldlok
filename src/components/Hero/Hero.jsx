@@ -5,8 +5,8 @@ import HeroCard from "./HeroCard";
 const Header = () => {
   return (
     <>
-      <section className="hero">
-        <div className="main__container hero__container" id="home">
+      <section className="hero" id="home">
+        <div className="main__container hero__container">
           <h1 className="hero__heading">
             High quality, reliable and proven products and systems
           </h1>
